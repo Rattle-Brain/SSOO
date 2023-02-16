@@ -1,0 +1,616 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+ 
+# GNU Make 4.3
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Fri Feb 18 18:21:01 2022
+
+# Variables
+
+# environment
+GDK_BACKEND = x11
+# environment
+LC_ALL = C
+# environment
+NO_AT_BRIDGE = 1
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-3f05d50a-5fc6-4534-9472-0107d89527dd.sock
+# environment
+LC_NAME = es_ES.UTF-8
+# environment
+LC_NUMERIC = es_ES.UTF-8
+# environment
+VSCODE_CWD = /home/rattlebrain
+# environment
+LC_ADDRESS = es_ES.UTF-8
+# environment
+GDM_LANG = en_US.UTF-8
+# default
+MAKE_COMMAND := make
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /home/rattlebrain/Documents/College/SSOO/V2
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+MAIL = /var/spool/mail/rattlebrain
+# environment
+XDG_DATA_DIRS = /home/rattlebrain/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/
+# environment
+OLDPWD = /home/rattlebrain
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+VSCODE_LOG_STACK = false
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = /home/rattlebrain/.config/Code - OSS/CachedData/5554b12acf27056905806867f251c859323ff7e9
+# environment
+LANG = C
+# makefile (from 'Makefile', line 14)
+WRAP = -Wl,-wrap,OperatingSystem_InterruptLogic,-wrap,Processor_FetchInstruction,-wrap,Processor_InstructionCycleLoop,-wrap,Processor_DecodeAndExecuteInstruction
+# environment
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.K2L8G1
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# makefile (from 'Makefile', line 6)
+PROGRAM = Simulator
+# makefile
+MAKEFLAGS = pqrR
+# makefile
+CURDIR := /home/rattlebrain/Documents/College/SSOO/V2
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MFLAGS = -pqrR
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# default
+.SHELLFLAGS := -c
+# environment
+WAYLAND_DISPLAY = wayland-0
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+XDG_SESSION_DESKTOP = gnome
+# environment
+VSCODE_CRASH_REPORTER_START_OPTIONS = {"companyName":"Microsoft","productName":"Code - OSS","submitURL":"","uploadToServer":false}
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST := Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_PID = 2385
+# environment
+MOZ_ENABLE_WAYLAND = 1
+# environment
+XDG_SESSION_TYPE = wayland
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from 'Makefile', line 12)
+INCLUDES = 
+# environment
+SESSION_MANAGER = local/arch-machine:@/tmp/.ICE-unix/1218,unix/arch-machine:/tmp/.ICE-unix/1218
+# automatic
+*F = $(notdir $*)
+# environment
+QT_QPA_PLATFORMTHEME = qt5ct
+# environment
+CHROME_DESKTOP = code-oss.desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+BREAKPAD_DUMP_LOCATION = /home/rattlebrain/.config/Code - OSS/exthost Crash Reports
+# makefile (from 'Makefile', line 11)
+STDCFLAGS = -g -c -Wall -O0 
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# makefile (from 'Makefile', line 9)
+SHELL = /bin/sh
+# default
+MAKECMDGOALS := all
+# environment
+XMODIFIERS = @im=ibus
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# environment
+SHLVL = 0
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = /home/rattlebrain/.local/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+# default
+MAKEFILES := 
+# environment
+LC_MONETARY = es_ES.UTF-8
+# environment
+MOTD_SHOWN = pam
+# automatic
+^F = $(notdir $^)
+# environment
+LC_TIME = es_ES.UTF-8
+# environment
+INVOCATION_ID = ddf0c409a55a4f7c92c1e3b31415dc5e
+# environment
+VSCODE_LOG_NATIVE = false
+# environment
+USERNAME = rattlebrain
+# environment
+GNOME_SETUP_DISPLAY = :1
+# environment
+LC_TELEPHONE = es_ES.UTF-8
+# automatic
+?F = $(notdir $?)
+# environment
+XDG_CURRENT_DESKTOP = GNOME
+# makefile (from 'Makefile', line 13)
+LIBRERIAS = 
+# automatic
++F = $(notdir $+)
+# environment
+DESKTOP_SESSION = gnome
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = GNOME
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+LOGNAME = rattlebrain
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code-oss.desktop
+# makefile
+.DEFAULT_GOAL := Simulator
+# environment
+SYSTEMD_EXEC_PID = 1233
+# environment
+EDITOR = /usr/bin/nano
+# environment
+DISPLAY = :0
+# environment
+USER = rattlebrain
+# default
+MAKE_VERSION := 4.3
+# environment
+MANAGERPID = 1185
+# environment
+LC_MEASUREMENT = es_ES.UTF-8
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 2372
+# environment
+_ = /usr/bin/make
+# environment
+LC_PAPER = es_ES.UTF-8
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+JOURNAL_STREAM = 8:21366
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
+# environment
+HOME = /home/rattlebrain
+# environment
+QT_IM_MODULE = ibus
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-5e1b6643-1.64.0-main.sock
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# default
+SUFFIXES := 
+# environment
+QT_AUTO_SCREEN_SCALE_FACTOR = 1
+# environment
+VSCODE_CLI = 1
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink guile load
+# makefile (from 'Makefile', line 10)
+CC = cc
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+GDMSESSION = gnome
+# environment
+LC_IDENTIFICATION = es_ES.UTF-8
+# variable set hash-table stats:
+# Load=116/1024=11%, Rehash=0, Collisions=6/148=4%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 66309, inode 787085): 59 files, no impossibilities.
+
+# 59 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+Heap.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+Asserts.o: Asserts.c Asserts.h MainMemory.h Simulator.h Clock.h ComputerSystemBase.h ComputerSystem.h MMU.h Heap.h Processor.h ProcessorBase.h Buses.h Instructions.def OperatingSystem.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 24):
+	$(CC) $(STDCFLAGS) $(INCLUDES) Asserts.c
+
+Buses.o: Buses.c Buses.h MMU.h Processor.h MainMemory.h Simulator.h ProcessorBase.h Instructions.def
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 27):
+	$(CC) $(STDCFLAGS) $(INCLUDES) Buses.c
+ 
+
+OperatingSystemBase.o: OperatingSystemBase.c OperatingSystemBase.h ComputerSystem.h Simulator.h ComputerSystemBase.h OperatingSystem.h Processor.h MainMemory.h ProcessorBase.h Buses.h Instructions.def
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 54):
+	$(CC) $(STDCFLAGS) $(INCLUDES) OperatingSystemBase.c
+
+Simulator: Simulator.o Asserts.o Buses.o Clock.o ComputerSystem.o ComputerSystemBase.o Heap.o MainMemory.o Messages.o MMU.o OperatingSystem.o OperatingSystemBase.o Processor.o ProcessorBase.o Wrappers.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 18):
+	$(CC) -o ${PROGRAM} Simulator.o Asserts.o Buses.o Clock.o ComputerSystem.o ComputerSystemBase.o Heap.o MainMemory.o Messages.o MMU.o OperatingSystem.o OperatingSystemBase.o Processor.o ProcessorBase.o Wrappers.o $(LIBRERIAS) $(WRAP)
+
+ProcessorBase.o: ProcessorBase.c Processor.h MainMemory.h Simulator.h Options.def ProcessorBase.h Buses.h Instructions.def Clock.h Asserts.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 60):
+	$(CC) $(STDCFLAGS) $(INCLUDES) ProcessorBase.c
+
+# Not a target:
+OperatingSystem.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+OperatingSystem.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Messages.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Processor.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ProcessorBase.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2021-03-24 18:12:51
+#  File has been updated.
+#  Successfully updated.
+
+Simulator.o: Simulator.c Simulator.h ComputerSystem.h ComputerSystemBase.h Asserts.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 21):
+	$(CC) $(STDCFLAGS) $(INCLUDES) Simulator.c
+
+Wrappers.o: Wrappers.c Wrappers.h Clock.h Asserts.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 63):
+	$(CC) $(STDCFLAGS) $(INCLUDES) Wrappers.c
+
+# Not a target:
+OperatingSystemBase.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+MainMemory.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+OperatingSystemBase.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Processor.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+MainMemory.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Simulator.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 66):
+	rm -f $(PROGRAM) *.o *~ *.d core
+
+# Not a target:
+Buses.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Clock.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Messages.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ComputerSystem.o: ComputerSystem.c ComputerSystem.h Simulator.h ComputerSystemBase.h OperatingSystem.h Processor.h MainMemory.h ProcessorBase.h Buses.h Instructions.def Messages.h Asserts.h Wrappers.c Wrappers.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 33):
+	$(CC) $(STDCFLAGS) $(INCLUDES) ComputerSystem.c
+
+# Not a target:
+Simulator.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ComputerSystemBase.o: ComputerSystemBase.c ComputerSystem.h Simulator.h ComputerSystemBase.h Processor.h MainMemory.h ProcessorBase.h Buses.h Instructions.def Heap.h OperatingSystemBase.h OperatingSystem.h Messages.h Asserts.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+ 
+#  recipe to execute (from 'Makefile', line 36):
+	$(CC) $(STDCFLAGS) $(INCLUDES) ComputerSystemBase.c
+
+# Not a target:
+MMU.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Buses.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Asserts.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ComputerSystemBase.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Wrappers.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+Processor.o: Processor.c Processor.h MainMemory.h Simulator.h Options.def ProcessorBase.h Buses.h Instructions.def OperatingSystem.h ComputerSystem.h ComputerSystemBase.h OperatingSystemBase.h Heap.h Wrappers.c Wrappers.h Clock.h Asserts.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 57):
+	$(CC) $(STDCFLAGS) $(INCLUDES) Processor.c
+
+MainMemory.o: MainMemory.c MainMemory.h Simulator.h Processor.h ProcessorBase.h Buses.h Instructions.def
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 42):
+	$(CC) $(STDCFLAGS) $(INCLUDES) MainMemory.c
+
+OperatingSystem.o: OperatingSystem.c OperatingSystem.h ComputerSystem.h Simulator.h ComputerSystemBase.h OperatingSystemBase.h MMU.h Processor.h MainMemory.h ProcessorBase.h Buses.h Instructions.def Heap.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 51):
+	$(CC) $(STDCFLAGS) $(INCLUDES) OperatingSystem.c
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+Messages.o: Messages.c Messages.h ComputerSystem.h Simulator.h ComputerSystemBase.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 45):
+	$(CC) $(STDCFLAGS) $(INCLUDES) Messages.c
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+MMU.o: MMU.c MMU.h Buses.h Processor.h MainMemory.h Simulator.h ProcessorBase.h Instructions.def
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 48):
+	$(CC) $(STDCFLAGS) $(INCLUDES) MMU.c
+
+# Not a target:
+ComputerSystemBase.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+Clock.o: Clock.c Clock.h Processor.h MainMemory.h Simulator.h ProcessorBase.h Buses.h Instructions.def ComputerSystem.h ComputerSystemBase.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 30):
+	$(CC) $(STDCFLAGS) $(INCLUDES) Clock.c
+
+# Not a target:
+Clock.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Asserts.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ProcessorBase.c:
+ 
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Heap.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+Heap.o: Heap.c Heap.h OperatingSystem.h ComputerSystem.h Simulator.h ComputerSystemBase.h Asserts.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 39):
+	$(CC) $(STDCFLAGS) $(INCLUDES) Heap.c
+
+# Not a target:
+Options.def:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ComputerSystem.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ComputerSystem.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Wrappers.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Instructions.def:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+MMU.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=53/1024=5%, Rehash=0, Collisions=1/240=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 81 / storage = 1015 B / avg = 12 B
+# current buf: size = 8162 B / used = 1015 B / count = 81 / avg = 12 B
+
+# strcache performance: lookups = 264 / hit rate = 69%
+# hash-table stats:
+# Load=81/8192=1%, Rehash=0, Collisions=0/264=0%
+# Finished Make data base on Fri Feb 18 18:21:01 2022
+
+ 

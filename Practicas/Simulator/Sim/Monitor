@@ -1,0 +1,235 @@
+500
+0 // High priority among daemons
+// Interrupt vector table
+IRET // Initial Operation for OS
+TRAP 3 // Shutdown the System
+// Here interrupt vector
+OS 2 // SysCall Interrupt
+IRET
+OS 6 // Exception Interrupt
+IRET
+OS 9 // Clock Interrupt
+IRET
+
+#193 "DM: "
+
+#200 "Shutdown\n"
+#210 "DM? "
+#215 "Load program"
+#230 "Exec. programs"
+#245 "Display memory"
+#260 "List program"
+#275 "Load batch"
+#290 "Exec. batch"
+#305 "List batch"
+
+#320 "Change DM"
+#330 "\nEnter option: "
+#350 " Filename?: "
+
+#380 "Monitor V2.0\n"
+
+// Storage for the Option
+#184 0
+// General Purpose variables
+#183 0
+#182 0
+// 170 Name of the file
+// 181 Pid to be listed
+#189 ".- "
+#188 '\n'
+#160 "PID?: "
+// #400 From this address, the names of the batch processes will be stored
+#400 0
+.newLine
+MOV 188 %REGB
+TRAP 10
+RET
+
+.menu
+
+MOV 200 #183
+MOV 0 #182
+MOV 9 #181
+
+MOV 380 %REGB // Display Monitor version
+TRAP 12
+MOV 193 %REGB
+TRAP 12
+TRAP 60 // Leaves the debug mode in REGB
+MOV %REGB #184
+MOV 184 %REGB
+TRAP 11
+CALL newLine
+CALL newLine
+
+// Begin the menu options
+MOV 182 %REGB
+TRAP 11
+MOV 189 %REGB
+TRAP 12
+MOV #183 %REGB
+TRAP 12
+CALL newLine
+MEMADD  15 183
+MOV %ACC #183
+MEMADD  1 182
+MOV %ACC #182
+MEMADD  -1 181
+MOV %ACC #181
+ZJUMP 2
+JUMP -14
+MOV 330 %REGB
+TRAP 12
+// Read the option. It will be stored in RegB
+MOV 184 %REGB
+TRAP 21
+RET
+
+.fin
+TRAP 3
+
+.readFile
+// Read a file name. Name will be stored from address 170
+MOV 170 %REGB
+TRAP 22
+RET
+
+.load
+MOV 215 %REGB
+TRAP 12
+MOV 350 %REGB
+TRAP 12
+CALL readFile
+MOV 170 %REGB
+TRAP 31
+RET
+
+
+
+.exec
+MOV 230 %REGB
+TRAP 12
+CALL newLine
+TRAP 32
+RET
+
+.display
+// System call to display the process table
+TRAP 30
+RET
+
+.listProgram
+// System call to list programs
+MOV 160 %REGB
+TRAP 12
+MOV 181 %REGB
+TRAP 21
+MOV #181 %REGB
+TRAP 33
+RET
+
+.loadBatch
+
+MOV 275 %REGB
+TRAP 12
+MOV 350 %REGB
+TRAP 12
+CALL readFile
+MOV 170 %REGB
+MOV 400 %ACC
+TRAP 50
+// This system call reads the file and stores file names from regB (400) memory address
+// The list of program names will end with a \0 char (i.e., when a double \n is found that means that the list ends)
+// Example: p1\0p2\0p3\0p4\0\0
+RET
+
+.listBatch
+MOV 305 %REGB
+TRAP 12
+CALL newLine
+// We use address 399 as an auxiliar variable
+MOV 400 #399
+MOV #399 %REGIA
+MOV %REGIA %ACC
+ZJUMP 14
+MOV 399 %REGIA
+MOV %REGIA %REGB
+TRAP 12
+CALL newLine
+MEMADD 1 399
+WRITE 399
+MOV #399 %REGIA
+MOV %REGIA %ACC
+ZJUMP 2
+JUMP -5
+MEMADD 1 399
+WRITE 399
+JUMP -15
+RET
+
+.execBatch
+
+// We use address 399 as an auxiliar variable
+MOV 400 #399
+MOV 400 #399
+MOV #399 %REGIA
+MOV %REGIA %ACC
+ZJUMP 14
+MOV 399 %REGIA
+MOV %REGIA %REGB
+// Load the program
+TRAP 31
+CALL newLine
+MEMADD 1 399
+WRITE 399
+MOV #399 %REGIA
+MOV %REGIA %ACC
+ZJUMP 2
+JUMP -5
+MEMADD 1 399
+WRITE 399
+JUMP -15
+// Execute the programs
+TRAP 32
+RET
+
+.changeDM
+MOV 210 %REGB
+TRAP 12
+MOV 184 %REGB
+TRAP 21
+MOV #184 %REGB
+TRAP 61
+RET
+
+.main
+CALL menu
+READ 184
+ZCALL fin
+MEMADD -1 184
+WRITE 184
+ZCALL load
+MEMADD -1 184
+WRITE 184
+ZCALL exec
+MEMADD -1 184
+WRITE 184
+ZCALL display
+MEMADD -1 184
+WRITE 184
+ZCALL listProgram
+MEMADD -1 184
+WRITE 184
+ZCALL loadBatch
+MEMADD -1 184
+WRITE 184
+ZCALL execBatch
+MEMADD -1 184
+WRITE 184
+ZCALL listBatch
+MEMADD -1 184
+WRITE 184
+ZCALL changeDM
+CALL newLine
+JUMP -28

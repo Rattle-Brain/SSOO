@@ -1,0 +1,2 @@
+Han sido modificadas las funciones OperatingSystem_TerminateProcess y OperatingSystem_Dispatch.
+Tambien ha sido modificada la PCB de los procesos para poder almacenar los tiempos de espera, retorno y respuesta.

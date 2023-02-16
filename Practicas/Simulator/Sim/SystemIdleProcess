@@ -1,0 +1,11 @@
+// System Idle Process
+// run NOP + JUMP to NOP indefinitely
+6 // Program size in memory cells
+100 // Priority of process (very low priority)
+
+ADD 1303 617
+NOP
+JUMP -1  // Jump to NOP
+TRAP 3
+// Here the systemStack will be stored
+// Here the systemStack will be stored

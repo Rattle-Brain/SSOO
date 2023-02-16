@@ -1,0 +1,20 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/rattlebrain/Documents/College/SSOO/V2'
+cc -g -c -Wall -O0   Simulator.c
+cc -g -c -Wall -O0   Asserts.c
+cc -g -c -Wall -O0   Buses.c
+cc -g -c -Wall -O0   Clock.c
+cc -g -c -Wall -O0   ComputerSystem.c
+cc -g -c -Wall -O0   ComputerSystemBase.c
+cc -g -c -Wall -O0   Heap.c
+cc -g -c -Wall -O0   MainMemory.c
+cc -g -c -Wall -O0   Messages.c
+cc -g -c -Wall -O0   MMU.c
+cc -g -c -Wall -O0   OperatingSystem.c
+cc -g -c -Wall -O0   OperatingSystemBase.c
+cc -g -c -Wall -O0   Processor.c
+cc -g -c -Wall -O0   ProcessorBase.c
+cc -g -c -Wall -O0   Wrappers.c
+cc -o Simulator Simulator.o Asserts.o Buses.o Clock.o ComputerSystem.o ComputerSystemBase.o Heap.o MainMemory.o Messages.o MMU.o OperatingSystem.o OperatingSystemBase.o Processor.o ProcessorBase.o Wrappers.o  -Wl,-wrap,OperatingSystem_InterruptLogic,-wrap,Processor_FetchInstruction,-wrap,Processor_InstructionCycleLoop,-wrap,Processor_DecodeAndExecuteInstruction
+make: Leaving directory '/home/rattlebrain/Documents/College/SSOO/V2'
+ 
